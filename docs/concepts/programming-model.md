@@ -82,7 +82,7 @@ Often there is a one-to-one correspondence between the transformations in the pr
 in the dataflow. Sometimes, however, one transformation may consist of multiple transformation operators.
 
 Sources and sinks are documented in the [streaming connectors](../dev/connectors/index.html) and [batch connectors](../dev/batch/connectors.html) docs.
-Transformations are documented in [DataStream operators]({{ site.baseurl }}/dev/stream/operators/index.html) and [DataSet transformations](../dev/batch/dataset_transformations.html).
+Transformations are documented in [DataStream operators](../dev/stream/operators/index.html) and [DataSet transformations](../dev/batch/dataset_transformations.html).
 
 {% top %}
 
@@ -144,7 +144,7 @@ of time:
 
   - **Event Time** is the time when an event was created. It is usually described by a timestamp in the events,
     for example attached by the producing sensor, or the producing service. Flink accesses event timestamps
-    via [timestamp assigners]({{ site.baseurl }}/dev/event_timestamps_watermarks.html).
+    via [timestamp assigners](../dev/event_timestamps_watermarks.html).
 
   - **Ingestion time** is the time when an event enters the Flink dataflow at the source operator.
 
@@ -152,7 +152,7 @@ of time:
 
 <img src="../fig/event_ingestion_processing_time.svg" alt="Event Time, Ingestion Time, and Processing Time" class="offset" width="80%" />
 
-More details on how to handle time are in the [event time docs]({{ site.baseurl }}/dev/event_time.html).
+More details on how to handle time are in the [event time docs](../dev/event_time.html).
 
 {% top %}
 
@@ -186,7 +186,7 @@ point of the checkpoint.
 The checkpoint interval is a means of trading off the overhead of fault tolerance during execution with the recovery time (the number
 of events that need to be replayed).
 
-The description of the [fault tolerance internals]({{ site.baseurl }}/internals/stream_checkpointing.html) provides
+The description of the [fault tolerance internals](../internals/stream_checkpointing.html) provides
 more information about how Flink manages checkpoints and related topics.
 Details about enabling and configuring checkpointing are in the [checkpointing API docs](../dev/stream/state/checkpointing.html).
 
@@ -208,7 +208,7 @@ same way as well as they apply to streaming programs, with minor exceptions:
     key/value indexes.
 
   - The DataSet API introduces special synchronized (superstep-based) iterations, which are only possible on
-    bounded streams. For details, check out the [iteration docs]({{ site.baseurl }}/dev/batch/iterations.html).
+    bounded streams. For details, check out the [iteration docs](../dev/batch/iterations.html).
 
 {% top %}
 
